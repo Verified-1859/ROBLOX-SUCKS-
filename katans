@@ -1,4 +1,16 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Reanimation.lua"))()
+Global.Reanimation = Global.Reanimation or "PermaDeath"
+Global.FlingType = 'Mixed'
+
+
+
+local Camera = workspace.CurrentCamera
+
+Global._reanimate = loadstring(game:HttpGet('https://raw.githubusercontent.com/shidemuri/coffeeware/main/reanim.lua'))()
+
+				Global.Reanimation = "PermaDeath"
+				Global.Fling = 'HumanoidRootPart'
+
 warn("Netless Activated!")
 _G.loop = true
 local player = game.Players.LocalPlayer
