@@ -134,7 +134,7 @@ return function()
 				if MouseDown then
 					FlingEnabled = false
 					if Mouse.Target then
-						FlingPart.CFrame = Mouse.Hit
+						print()
 						if Mouse.Target.Parent and Mouse.Target.Parent:FindFirstChild('Humanoid') then
 							OtherPlayer = Mouse.Target.Parent:FindFirstChild('Torso') or Mouse.Target.Parent:FindFirstChild('UpperTorso')
 						elseif Mouse.Target.Parent.Parent and Mouse.Target.Parent.Parent:FindFirstChild('Humanoid') then
@@ -152,7 +152,7 @@ return function()
 							end
 						end)()
 					else
-							Global.FlingPart.CFrame= Player.Character.Torso.CFrame - Vector3.new(0,6,0)
+						print()
 					end
 					if OtherPlayer then FlingEnabled = true; looping = false end
 				elseif FlingEnabled == true then
@@ -240,10 +240,10 @@ return function()
 				connection = game:GetService('RunService').Heartbeat:Connect(function()
 					if MouseDown then
 						if Mouse.Target then
-							Global.FlingPart.CFrame = Mouse.Hit	
+							print()
 						end
 					else
-						Global.FlingPart.CFrame= Player.Character.Torso.CFrame - Vector3.new(0,6,0)
+						print()
 					end
 				end)
 			end
