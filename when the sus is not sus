@@ -1,33 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Verified-1859/ROBLOX-SUCKS-/main/sdc'))()
 
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Verified-1859 
-Verified-1859
-/
-ROBLOX-SUCKS-
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-ROBLOX-SUCKS-/when the sus is not sus
-@Verified-1859
-Verified-1859 Update when the sus is not sus
-Latest commit 392c2b4 2 minutes ago
- History
- 1 contributor
-253 lines (242 sloc)  8.89 KB
 
 return function()
 	local Global = getgenv and getgenv() or _G
