@@ -1,3 +1,34 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Verified-1859/ROBLOX-SUCKS-/main/sdc'))()
+
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Verified-1859 
+Verified-1859
+/
+ROBLOX-SUCKS-
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+ROBLOX-SUCKS-/when the sus is not sus
+@Verified-1859
+Verified-1859 Update when the sus is not sus
+Latest commit 392c2b4 2 minutes ago
+ History
+ 1 contributor
+253 lines (242 sloc)  8.89 KB
+
 return function()
 	local Global = getgenv and getgenv() or _G
 	
@@ -126,7 +157,7 @@ return function()
 			local connection;
 			Global.FlingPart.Transparency=.5;
 			RainbowSelection(Global.FlingPart)
-			Mouse.TargetFilter = Player.Character
+
 			if Global.FlingType == 'Mixed' or Global.FlingType == nil then
 			local OtherPlayer;
 			local looping = false;
@@ -214,9 +245,9 @@ return function()
 								w.C0 = CFrame.new(0,0,8)
 								w2.C0 = CFrame.new(0,0,-8)
 								for _=1,15 do
-									Global.FlingPart.Position = p1.Position
+								
 									task.wait(.1)
-									Global.FlingPart.Position = p2.Position
+								
 									task.wait(.1)
 								end
 								for _,v in ipairs({w,w2,p1,p2}) do game:GetService('Debris'):AddItem(v,0) end
@@ -232,7 +263,7 @@ return function()
 					else 
 						if flinging == true then 
 						else 
-							Global.FlingPart.CFrame = Player.Character.Torso.CFrame - Vector3.new(0,6,0) 
+			
 						end
 					end
 				end)
@@ -251,3 +282,5 @@ return function()
 		end
 	end
 end
+
+
