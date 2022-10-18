@@ -6861,7 +6861,25 @@ for i, v in pairs (game:GetService("Workspace").bank.Model.moneycash:GetDescenda
 end
 end
     end)
-    addcmd('choco',{'chocolate'},function(args, speaker)
+       addcmd('chips',{},function(args, speaker)
+    if fireclickdetector then
+		for i,v in pairs(game:GetService("Workspace")["Prison_Cafeteria"]["vending machine"].Buttons.chips:GetDescendants()) do
+			if v:IsA("ClickDetector") then
+				fireclickdetector(v)
+    		end
+		end
+	end
+    end)
+      addcmd('cola',{},function(args, speaker)
+    if fireclickdetector then
+		for i,v in pairs(game:GetService("Workspace")["Prison_Cafeteria"]["vending machine"].Buttons.cola:GetDescendants()) do
+			if v:IsA("ClickDetector") then
+				fireclickdetector(v)
+    		end
+		end
+	end
+    end)
+    addcmd{'chocolate'},function(args, speaker)
     if fireclickdetector then
 		for i,v in pairs(game:GetService("Workspace")["Prison_Cafeteria"]["vending machine"].Buttons.choco:GetDescendants()) do
 			if v:IsA("ClickDetector") then
