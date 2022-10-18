@@ -6861,6 +6861,15 @@ for i, v in pairs (game:GetService("Workspace").bank.Model.moneycash:GetDescenda
 end
 end
     end)
+    addcmd('choco',{'chocolate'},function(args, speaker)
+    if fireclickdetector then
+		for i,v in pairs(game:GetService("Workspace")["Prison_Cafeteria"]["vending machine"].Buttons.choco:GetDescendants()) do
+			if v:IsA("ClickDetector") then
+				fireclickdetector(v)
+    		end
+		end
+	end
+    end)
 addcmd('nogetcash',{'nogcash'},function(args, speaker)
     	local playerHead = game.Players.LocalPlayer.Character.Head
 for i, v in pairs (game:GetService("Workspace").bank.Model["door_v3"].block.hitbox:GetDescendants()) do
