@@ -1,0 +1,18 @@
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/THISGITHUBHASBEENRETIRED/ROBLOX-SUCKS-/main/valuething"))()	
+	restorebutton = Instance.new("ScreenGui",game.Players.LocalPlayer:WaitForChild("PlayerGui"))
+b03d = Instance.new("TextButton",restorebutton)
+b03d.BackgroundColor3 = Color3.new(0/255,0/255,0/255)
+b03d.BorderColor3 = Color3.new(255/255,0/255,0/255)
+b03d.BorderSizePixel = 3
+b03d.Position = UDim2.new(1,-103,1,-23)
+b03d.Size = UDim2.new(0,100,0,20)
+b03d.Font = "SourceSans"
+b03d.FontSize = "Size18"
+b03d.Text = "Reload c00lgui"
+b03d.TextColor3 = Color3.new(255/255,255/255,255/255)
+b03d.MouseButton1Down:connect(function()
+b03d:Destroy()
+cka:Destroy()
+end)
+	
