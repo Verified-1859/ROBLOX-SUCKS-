@@ -1,0 +1,10 @@
+local OwnerValue = Instance.new("StringValue", workspace)
+OwnerValue.Name = "Owner"
+local skybox = Instance.new("StringValue", workspace.Owner)
+skybox.Name = "Skybox/DecalID"
+local placeaid = Instance.new("StringValue", workspace.Owner)
+placeaid.Name = "PlaceID"
+local musicadi = Instance.new("StringValue", workspace.Owner)
+musicadi.Name = "MusicID"
+local custem = Instance.new("StringValue", workspace.Owner)
+custem.Name = "Custom Gear ID"
