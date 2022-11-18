@@ -1,7 +1,7 @@
 local PageLabel_2 = Instance.new("TextLabel")
 local PageLabel = Instance.new("TextLabel")
 PageLabel.Name = "PageLabel"
-PageLabel.Parent = game.Players.LocalPlayer.PlayerGui.culgui.Settings.Page1
+PageLabel.Parent = game.Players.LocalPlayer.PlayerGui.culgui.Frame.Settings.Page1
 PageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 PageLabel.BorderColor3 = Color3.fromRGB(255, 0, 0)
 PageLabel.BorderSizePixel = 3
@@ -14,7 +14,7 @@ PageLabel.TextSize = 18.000
 PageLabel.TextWrapped = true
 
 PageLabel_2.Name = "PageLabel"
-PageLabel_2.Parent = game.Players.LocalPlayer.PlayerGui.culgui.Settings.Page2
+PageLabel_2.Parent = game.Players.LocalPlayer.PlayerGui.culgui.Frame.Settings.Page2
 PageLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 PageLabel_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 PageLabel_2.BorderSizePixel = 3
