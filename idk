@@ -1,0 +1,2 @@
+local PageLabel_2 = Instance.new("TextLabel")
+local PageLabel = Instance.new("TextLabel")
