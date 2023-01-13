@@ -45,26 +45,7 @@ return function()
 		{"14456185",CFrame.Angles(0,0,0)},
 	}
 	
-	
-	local function RainbowSelection(Part)
-		local Selection = Instance.new("Highlight")
-		Selection.Name = "Padero Pride Month Special"
-		Selection.Adornee = Part
-		Selection.FillTransparency = 0.7
-		Selection.DepthMode = 0
-		task.spawn(function()
-			while Character do
-				for i = 0,1,0.004 do
-					Selection.FillColor = Color3.fromHSV(i,1,1)
-					Selection.OutlineColor = Color3.fromHSV(i,1,1)
-					Part.Transparency = 0
-					if isnetworkowner(Part) then Selection.Enabled = true else Selection.Enabled = false end
-					task.wait()
-				end
-			end
-		end)
-		Selection.Parent = Character
-	end
+
 	
 	do -- Settings
 		Global.Fling = Character.Humanoid.RigType == Enum.HumanoidRigType.R15 and 'LowerTorso' or Global.Reanimation == "PermaDeath" and 'HumanoidRootPart' or 'Right Arm'
@@ -124,8 +105,6 @@ return function()
 		Global.FlingPart = Global.RealRig:FindFirstChild(tostring(Global.Fling))
 		if Global.FlingPart then
 			local connection;
-			Global.FlingPart.Transparency=.5;
-			RainbowSelection(Global.FlingPart)
 			Mouse.TargetFilter = Player.Character
 			if Global.FlingType == 'Mixed' or Global.FlingType == nil then
 			local OtherPlayer;
@@ -134,7 +113,11 @@ return function()
 				if MouseDown then
 					FlingEnabled = false
 					if Mouse.Target then
-						 
+						if Mouse.Target.Parent and Mouse.Target.Parent:FindFirstChild('Humanoid') then
+							OtherPlayer = Mouse.Target.Parent:FindFirstChild('Torso') or Mouse.Target.Parent:FindFirstChild('UpperTorso')
+						elseif Mouse.Target.Parent.Parent and Mouse.Target.Parent.Parent:FindFirstChild('Humanoid') then
+							OtherPlayer = Mouse.Target.Parent.Parent:FindFirstChild('Torso') or Mouse.Target.Parent.Parent:FindFirstChild('UpperTorso')
+						else OtherPlayer = nil end
 						coroutine.wrap(function()
 							if not OtherPlayer then return end
 							local old = OtherPlayer
@@ -147,7 +130,7 @@ return function()
 							end
 						end)()
 					else
-							Global.FlingPart.CFrame= Player.Character.Torso.CFrame - Vector3.new(0,6,0)
+							
 					end
 					if OtherPlayer then FlingEnabled = true; looping = false end
 				elseif FlingEnabled == true then
@@ -171,9 +154,9 @@ return function()
 						if not OtherPlayer then break end
 						looping = true
 						--if OtherPlayer == nil then break end
-						Global.FlingPart.Position= p1.Position--:Lerp(p1.CFrame,1)
+				
 						task.wait(.1)
-						Global.FlingPart.Position= p2.Position--:Lerp(p2.CFrame,1)
+					
 						task.wait(.1)
 					end
 					for _,v in ipairs({w,w2,p1,p2}) do game:GetService('Debris'):AddItem(v,0) end
@@ -209,29 +192,37 @@ return function()
 								w.C0 = CFrame.new(0,0,8)
 								w2.C0 = CFrame.new(0,0,-8)
 								for _=1,15 do
-									Global.FlingPart.Position = p1.Position
+								
 									task.wait(.1)
-									Global.FlingPart.Position = p2.Position
+							
 									task.wait(.1)
 								end
 								for _,v in ipairs({w,w2,p1,p2}) do game:GetService('Debris'):AddItem(v,0) end
 								flinging = false
 							else flinging = false 
-				
+								if Mouse.Target then 
+								
+								else 
+							
+								end 
 							end
 						end
 					else 
 						if flinging == true then 
 						else 
-							Global.FlingPart.CFrame = Player.Character.Torso.CFrame - Vector3.new(0,6,0) 
+						
 						end
 					end
 				end)
 			elseif Global.FlingType == 'Click only' then
 				connection = game:GetService('RunService').Heartbeat:Connect(function()
 					if MouseDown then
-				print()
-				end
+						if Mouse.Target then
+							
+						end
+					else
+					
+					end
 				end)
 			end
 			game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()connection:Disconnect()end)
