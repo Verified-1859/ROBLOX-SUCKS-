@@ -664,7 +664,6 @@ ce1.Name = "All"
 local ce1 = Instance.new("StringValue")
 ce1.Parent = Categories_7
 ce1.Name = "Server Killers"
-
 LagClassicChatOnly.Name = "Lag (Classic Chat Only)"
 LagClassicChatOnly.Parent = Scripts
 LagClassicChatOnly.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
@@ -689,6 +688,34 @@ ce1.Parent = Categories_8
 ce1.Name = "All"
 local ce1 = Instance.new("StringValue")
 ce1.Parent = Categories_8
+ce1.Name = "Server Killers"
+
+local noot = Instance.new("TextButton")
+noot.Name = "noot noot"
+noot.Parent = Scripts
+noot.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+noot.LayoutOrder = 35
+noot.Position = UDim2.new(0.418000013, 0, 0.291000009, 0)
+noot.Size = UDim2.new(0, 475, 0, 30)
+noot.Font = Enum.Font.SourceSans
+noot.Text = "noot noot"
+noot.TextColor3 = Color3.fromRGB(255, 255, 255)
+noot.TextScaled = true
+noot.TextSize = 14.000
+noot.TextWrapped = true
+local UICo = Instance.new("UICorner")
+local catttegonot = Instance.new("Folder")
+UICo.CornerRadius = UDim.new(0, 10)
+UICo.Parent = noot
+
+catttegonot.Name = "Categories"
+catttegonot.Parent = noot
+
+local ce1 = Instance.new("StringValue")
+ce1.Parent = catttegonot
+ce1.Name = "All"
+local ce1 = Instance.new("StringValue")
+ce1.Parent = catttegonot
 ce1.Name = "Server Killers"
 
 Settings_2.Name = "Settings"
@@ -1457,7 +1484,19 @@ local function DUPQJ_fake_script() -- Scripts.MAINS
 				}
 			}
 			_(args)
-		end
+	end
+	function AddSparkles(part)
+		local args = {
+			[1] = "CreateDecorations",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["DecorationType"] = "Sparkles"
+				}
+			}
+		}
+		_(args)
+	end
 		function FireParts()
 			for i,v in game.Workspace:GetDescendants() do
 				spawn(function()
@@ -1657,6 +1696,9 @@ local function DUPQJ_fake_script() -- Scripts.MAINS
 		F3X.Edit(object, defaultProperties)
 		return F3X.Object(object)
 	end
+	function AddSparkles(object)
+		local sparkles = serverEndpoint:InvokeServer("CreateDecorations", {{Part = object, DecorationType = "Sparkles"}})[1] 
+		return F3X.Object(sparkles) end
 	function Sky(id)
 		e = char.HumanoidRootPart.CFrame.x
 		f = char.HumanoidRootPart.CFrame.y
@@ -1736,6 +1778,48 @@ local function DUPQJ_fake_script() -- Scripts.MAINS
 		while wait() do
 			remote:FireServer(malformed, malformed)
 		end
+	end)
+	noot.MouseButton1Down:Connect(function()
+		local msg = Instance.new("Message",workspace)
+		msg.Text = "Subscribe To Syntax 64 For More!"
+		wait(3)
+		msg:Destroy()
+		pingudecal = "382332426"
+		local didpingu = false
+		local ScreenGui = Instance.new("ScreenGui",game.Players["LocalPlayer"].PlayerGui)
+		ScreenGui.Name = "nooties"
+		local asd = Instance.new("TextButton",ScreenGui)
+		asd.BackgroundColor3 = Color3.new(0,0,0)
+		asd.BorderColor3 = Color3.new(0,0,0)
+		asd.Name = "nooties"
+		asd.Position = UDim2.new(1,-150,1,-90)
+		asd.Size = UDim2.new(0,150,0,45)
+		asd.Font = "SourceSansBold"
+		asd.FontSize = "Size32"
+		asd.Text = "Noot Noot!"
+		asd.TextColor3 = Color3.new(255,255,255)
+		asd.MouseButton1Down:connect(function()
+			if didpingu == false then
+				didpingu = true
+				Sky(pingudecal)
+				local function partasd()
+					spam(pingudecal)
+					for i,a in pairs(workspace:GetChildren()) do
+						local pepe = coroutine.create(function()
+							while wait() do
+								if a.Name ~= "Head" or "Torso" or "Left Arm" or "Right Arm" or "Left Leg" or "Right Leg" then
+									AddSparkles(a)
+								end
+							end
+						end)
+						coroutine.resume(pepe)
+					end
+				end
+				partasd()
+			else
+				warn("Already Ran! Did not execute the script!")
+			end
+		end)
 	end)
 end
 coroutine.wrap(DUPQJ_fake_script)()
