@@ -19,7 +19,11 @@ local notnootf3xgamesonly = Instance.new("TextButton")
 local lag = Instance.new("TextButton")
 local infiteyield = Instance.new("TextButton")
 local praisonlifejohndoescary2019 = Instance.new("TextButton")
-local febypas_2 = Instance.new("TextLabel")
+local swordgamefuckas = Instance.new("TextButton")
+local Shedletskyf3x = Instance.new("TextButton")
+local teamflatspamf3x = Instance.new("TextButton")
+local scareyanonymousspamSCREAMF3X = Instance.new("TextButton")
+local madebyg00donladn = Instance.new("TextLabel")
 
 --Properties:
 
@@ -30,7 +34,7 @@ ScreenGui.ResetOnSpawn = false
 ImageLabel.Parent = ScreenGui
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.425506562, 0, 0.132867604, 0)
+ImageLabel.Position = UDim2.new(0.172638997, 0, 0.172083288, 0)
 ImageLabel.Size = UDim2.new(0, 257, 0, 355)
 ImageLabel.Image = "rbxassetid://1845221548"
 
@@ -60,8 +64,9 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, 0.0199569743, 0)
-ScrollingFrame.Size = UDim2.new(0, 256, 0, 305)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0199570134, 0)
+ScrollingFrame.Size = UDim2.new(0, 256, 0, 255)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 
 UIGridLayout.Parent = ScrollingFrame
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -187,22 +192,70 @@ praisonlifejohndoescary2019.TextScaled = true
 praisonlifejohndoescary2019.TextSize = 14.000
 praisonlifejohndoescary2019.TextWrapped = true
 
-febypas_2.Name = "febypas."
-febypas_2.Parent = ImageLabel
-febypas_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-febypas_2.Position = UDim2.new(0, 0, 0.857015014, 0)
-febypas_2.Size = UDim2.new(0, 257, 0, 50)
-febypas_2.ZIndex = 2
-febypas_2.Font = Enum.Font.SourceSans
-febypas_2.Text = "made by g00donladn"
-febypas_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-febypas_2.TextScaled = true
-febypas_2.TextSize = 14.000
-febypas_2.TextWrapped = true
+swordgamefuckas.Name = "sword game fuckas"
+swordgamefuckas.Parent = ScrollingFrame
+swordgamefuckas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+swordgamefuckas.Position = UDim2.new(-0.296875, 0, 0, 0)
+swordgamefuckas.Size = UDim2.new(0, 166, 0, 50)
+swordgamefuckas.Font = Enum.Font.SourceSans
+swordgamefuckas.Text = "sword game fuckas"
+swordgamefuckas.TextColor3 = Color3.fromRGB(0, 0, 0)
+swordgamefuckas.TextScaled = true
+swordgamefuckas.TextSize = 14.000
+swordgamefuckas.TextWrapped = true
+
+Shedletskyf3x.Name = "Shedletsky (f3x)"
+Shedletskyf3x.Parent = ScrollingFrame
+Shedletskyf3x.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shedletskyf3x.Position = UDim2.new(-0.296875, 0, 0, 0)
+Shedletskyf3x.Size = UDim2.new(0, 166, 0, 50)
+Shedletskyf3x.Font = Enum.Font.SourceSans
+Shedletskyf3x.Text = "Shedletsky (f3x)"
+Shedletskyf3x.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shedletskyf3x.TextScaled = true
+Shedletskyf3x.TextSize = 14.000
+Shedletskyf3x.TextWrapped = true
+
+teamflatspamf3x.Name = "team flat spam(f3x)"
+teamflatspamf3x.Parent = ScrollingFrame
+teamflatspamf3x.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teamflatspamf3x.Position = UDim2.new(-0.296875, 0, 0, 0)
+teamflatspamf3x.Size = UDim2.new(0, 166, 0, 50)
+teamflatspamf3x.Font = Enum.Font.SourceSans
+teamflatspamf3x.Text = "team flat spam(f3x)"
+teamflatspamf3x.TextColor3 = Color3.fromRGB(0, 0, 0)
+teamflatspamf3x.TextScaled = true
+teamflatspamf3x.TextSize = 14.000
+teamflatspamf3x.TextWrapped = true
+
+scareyanonymousspamSCREAMF3X.Name = "scarey anonymous spam SCREAM (F3X)"
+scareyanonymousspamSCREAMF3X.Parent = ScrollingFrame
+scareyanonymousspamSCREAMF3X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scareyanonymousspamSCREAMF3X.Position = UDim2.new(-0.296875, 0, 0, 0)
+scareyanonymousspamSCREAMF3X.Size = UDim2.new(0, 166, 0, 50)
+scareyanonymousspamSCREAMF3X.Font = Enum.Font.SourceSans
+scareyanonymousspamSCREAMF3X.Text = "scarey anonymous spam SCREAM (F3X)"
+scareyanonymousspamSCREAMF3X.TextColor3 = Color3.fromRGB(0, 0, 0)
+scareyanonymousspamSCREAMF3X.TextScaled = true
+scareyanonymousspamSCREAMF3X.TextSize = 14.000
+scareyanonymousspamSCREAMF3X.TextWrapped = true
+
+madebyg00donladn.Name = "made by g00donladn"
+madebyg00donladn.Parent = ImageLabel
+madebyg00donladn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+madebyg00donladn.Position = UDim2.new(0, 0, 0.857015014, 0)
+madebyg00donladn.Size = UDim2.new(0, 257, 0, 50)
+madebyg00donladn.ZIndex = 2
+madebyg00donladn.Font = Enum.Font.SourceSans
+madebyg00donladn.Text = "made by g00donladn"
+madebyg00donladn.TextColor3 = Color3.fromRGB(0, 0, 0)
+madebyg00donladn.TextScaled = true
+madebyg00donladn.TextSize = 14.000
+madebyg00donladn.TextWrapped = true
 
 -- Scripts:
 
-local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript 
+local function PORER_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local s = script.Parent
@@ -210,7 +263,6 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 	c00lskiddecal = "158118263"
 	pcall(function()
 	local player = game.Players.LocalPlayer
-	local char = player.Character
 	local tool
 	for i,v in player:GetDescendants() do
 		if v.Name == "SyncAPI" then
@@ -472,7 +524,8 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 		}
 		_(args)
 	end
-	function Sky(id)
+		function Sky(id)
+			local char = player.Character
 		e = char.HumanoidRootPart.CFrame.x
 		f = char.HumanoidRootPart.CFrame.y
 		g = char.HumanoidRootPart.CFrame.z
@@ -496,7 +549,8 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 		for i,v in workspace:GetDescendants() do
 			if v:IsA("BasePart") then
 				spawn(function()
-					SetLocked(v,false)
+						SetLocked(v,false)
+						SetTrans(v,0)
 					SpawnDecal(v,Enum.NormalId.Front)
 					AddDecal(v,id,Enum.NormalId.Front)
 	
@@ -537,7 +591,7 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 				end)
 			end)
 		end
-	end
+		end
 		end)
 	s["c00skdid decal spam (f3x games only)"].MouseButton1Down:Connect(function()
 		spam(c00lskiddecal)
@@ -592,10 +646,10 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 			if didpingu == false then
 				didpingu = true
 				Unanchor()
-				NoColide()
 				FireParts()
 	
 				Sky(pingudecal)
+				NoColide()
 				local function partasd()
 					spam(pingudecal)
 					for i,a in pairs(workspace:GetChildren()) do
@@ -615,6 +669,152 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 			end
 		end)
 	end)
+	s["sword game fuckas"].MouseButton1Down:Connect(function()
+		local ScreenGui = Instance.new("ScreenGui")
+		local ImageLabel = Instance.new("ImageLabel")
+		local TextButton = Instance.new("TextButton")
+		local TextLabel = Instance.new("TextLabel")
+	
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		ScreenGui.ResetOnSpawn = false
+	
+		ImageLabel.Parent = ScreenGui
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ImageLabel.BorderSizePixel = 0
+		ImageLabel.Position = UDim2.new(0.0720949918, 0, 0.174932063, 0)
+		ImageLabel.Size = UDim2.new(0, 245, 0, 289)
+		ImageLabel.Image = "rbxassetid://8126977748"
+	
+		TextButton.Parent = ImageLabel
+		TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.BorderSizePixel = 0
+		TextButton.Position = UDim2.new(0.151020408, 0, 0.474048436, 0)
+		TextButton.Size = UDim2.new(0, 170, 0, 48)
+		TextButton.Font = Enum.Font.SourceSans
+		TextButton.Text = "troll"
+		TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.TextSize = 14.000
+		TextButton.TextWrapped = true
+	
+		TextLabel.Parent = ImageLabel
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.BorderSizePixel = 0
+		TextLabel.Position = UDim2.new(0.118367344, 0, 0.0207612459, 0)
+		TextLabel.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel.Font = Enum.Font.SourceSans
+		TextLabel.Text = "swordgam trolelr"
+		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.TextSize = 14.000
+	
+		-- Scripts:
+	
+		local function OYAUHL_fake_script() -- TextButton.LocalScript 
+			local script = Instance.new('LocalScript', TextButton)
+	
+			local teleport_player_locally_offset = 5
+			script.Parent.MouseButton1Down:Connect(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					if v ~= game.Players.LocalPlayer then
+						local current_player_character = v.Character
+						local exploiter_head_position = game.Players.LocalPlayer.Character.Head.Position
+						local new_cframe = CFrame.new(exploiter_head_position.X+teleport_player_locally_offset, exploiter_head_position.Y, exploiter_head_position.Z)
+						v.Character:SetPrimaryPartCFrame(new_cframe)
+						v.Character.Head.Anchored = true
+					end
+				end
+	
+				for i,v in pairs(game.Players:GetChildren()) do
+					local player_character = v.Character
+					for j,w in pairs(player_character:GetChildren()) do
+						if w:FindFirstChild("Handle") ~= nil and w.Parent.Name ~= game.Players.LocalPlayer.Character.Name then
+							w:Remove()
+						end
+					end
+				end
+			end)
+		end
+		coroutine.wrap(OYAUHL_fake_script)()
+		local function GLVQ_fake_script() -- ImageLabel.Smooth GUI Dragging 
+			local script = Instance.new('LocalScript', ImageLabel)
+	
+			local UserInputService = game:GetService("UserInputService")
+			local runService = (game:GetService("RunService"));
+	
+			local gui = script.Parent
+	
+			local dragging
+			local dragInput
+			local dragStart
+			local startPos
+	
+			local function Lerp(a, b, m)
+				return a + (b - a) * m
+			end;
+	
+			local lastMousePos
+			local lastGoalPos
+			local DRAG_SPEED = (8); -- // The speed of the UI darg.
+			local function Update(dt)
+				if not (startPos) then return end;
+				if not (dragging) and (lastGoalPos) then
+					gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+					return 
+				end;
+	
+				local delta = (lastMousePos - UserInputService:GetMouseLocation())
+				local xGoal = (startPos.X.Offset - delta.X);
+				local yGoal = (startPos.Y.Offset - delta.Y);
+				lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+			end;
+	
+			gui.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					dragging = true
+					dragStart = input.Position
+					startPos = gui.Position
+					lastMousePos = UserInputService:GetMouseLocation()
+	
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragging = false
+						end
+					end)
+				end
+			end)
+	
+			gui.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+	
+			runService.Heartbeat:Connect(Update)
+		end
+		coroutine.wrap(GLVQ_fake_script)()
+	
+	end)
+	
+	s["Shedletsky (f3x)"].MouseButton1Down:Connect(function()
+		local shed = 172423468
+		Sky(shed)
+	end)
+	s["team flat spam(f3x)"].MouseButton1Down:Connect(function()
+		local fat = 12507856273
+		Sky(fat)
+		spam(fat)
+	end)
+	
+	s["scarey anonymous spam SCREAM (F3X)"].MouseButton1Down:Connect(function()
+		local xd = 1845221548
+		spam(xd)
+		Sky(xd)
+	end)
+	
 	s["praison life john doe scary 2019"].MouseButton1Down:Connect(function()  
 		if game.workspace:FindFirstChild("DeathMus") then
 			workspace.DeathMus:Destroy()
@@ -1236,9 +1436,9 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 	
 	end)
 end
-coroutine.wrap(YYHDDCY_fake_script)()
+coroutine.wrap(PORER_fake_script)()
 
-local function MJEUH_fake_script() -- ImageLabel.Smooth GUI Dragging 
+local function RBROM_fake_script() -- ImageLabel.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1295,4 +1495,4 @@ local function MJEUH_fake_script() -- ImageLabel.Smooth GUI Dragging
 
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(MJEUH_fake_script)()
+coroutine.wrap(RBROM_fake_script)()
