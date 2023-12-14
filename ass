@@ -1,0 +1,369 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+game.Players.LocalPlayer.PlayerGui.ScreenGui:Destroy()
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local Unbox = Instance.new("TextButton")
+local Box = Instance.new("TextButton")
+local Kill = Instance.new("TextButton")
+local Control = Instance.new("TextButton")
+local Touchkill = Instance.new("TextButton")
+local Refresh = Instance.new("TextButton")
+local R15 = Instance.new("TextButton")
+local R6 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Execute = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.DisplayOrder = 76
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 243, 0, 259)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.0248283483, 0)
+TextLabel.Size = UDim2.new(0, 243, 0, 30)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "PROJECT DEFAULT SETTINGS"
+TextLabel.TextColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel.TextSize = 18.000
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(188, 184, 181)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 243, 0, 7)
+
+Unbox.Name = "Unbox"
+Unbox.Parent = Frame
+Unbox.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Unbox.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Unbox.Position = UDim2.new(0.520576119, 0, 0.167631879, 0)
+Unbox.Size = UDim2.new(0, 108, 0, 25)
+Unbox.Font = Enum.Font.Code
+Unbox.Text = "UNBOX"
+Unbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unbox.TextSize = 16.000
+
+Box.Name = "Box"
+Box.Parent = Frame
+Box.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Box.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Box.Position = UDim2.new(0.026748972, 0, 0.167631879, 0)
+Box.Size = UDim2.new(0, 110, 0, 25)
+Box.Font = Enum.Font.Code
+Box.Text = "BOX"
+Box.TextColor3 = Color3.fromRGB(0, 0, 0)
+Box.TextSize = 16.000
+
+Kill.Name = "Kill"
+Kill.Parent = Frame
+Kill.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Kill.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Kill.Position = UDim2.new(0.520576119, 0, 0.287322998, 0)
+Kill.Size = UDim2.new(0, 108, 0, 25)
+Kill.Font = Enum.Font.Code
+Kill.Text = "KILL"
+Kill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kill.TextSize = 16.000
+
+Control.Name = "Control"
+Control.Parent = Frame
+Control.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Control.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Control.Position = UDim2.new(0.026748972, 0, 0.287322998, 0)
+Control.Size = UDim2.new(0, 110, 0, 25)
+Control.Font = Enum.Font.Code
+Control.Text = "CONTROL"
+Control.TextColor3 = Color3.fromRGB(0, 0, 0)
+Control.TextSize = 16.000
+
+Touchkill.Name = "Touch kill"
+Touchkill.Parent = Frame
+Touchkill.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Touchkill.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Touchkill.Position = UDim2.new(0.026748972, 0, 0.414736122, 0)
+Touchkill.Size = UDim2.new(0, 228, 0, 25)
+Touchkill.Font = Enum.Font.Code
+Touchkill.Text = "TOUCH KILL"
+Touchkill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Touchkill.TextSize = 16.000
+
+Refresh.Name = "Refresh"
+Refresh.Parent = Frame
+Refresh.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Refresh.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Refresh.Position = UDim2.new(0.026748972, 0, 0.542149246, 0)
+Refresh.Size = UDim2.new(0, 75, 0, 25)
+Refresh.Font = Enum.Font.Code
+Refresh.Text = "RE"
+Refresh.TextColor3 = Color3.fromRGB(0, 0, 0)
+Refresh.TextSize = 16.000
+
+R15.Name = "R15"
+R15.Parent = Frame
+R15.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+R15.BorderColor3 = Color3.fromRGB(198, 198, 198)
+R15.Position = UDim2.new(0.656378627, 0, 0.542149246, 0)
+R15.Size = UDim2.new(0, 75, 0, 25)
+R15.Font = Enum.Font.Code
+R15.Text = "R15"
+R15.TextColor3 = Color3.fromRGB(0, 0, 0)
+R15.TextSize = 16.000
+
+R6.Name = "R6"
+R6.Parent = Frame
+R6.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+R6.BorderColor3 = Color3.fromRGB(198, 198, 198)
+R6.Position = UDim2.new(0.355967075, 0, 0.542149246, 0)
+R6.Size = UDim2.new(0, 68, 0, 25)
+R6.Font = Enum.Font.Code
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+R6.TextSize = 16.000
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0308641978, 0, 0.762226462, 0)
+TextBox.Size = UDim2.new(0, 228, 0, 21)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.PlaceholderColor3 = Color3.fromRGB(207, 207, 207)
+TextBox.PlaceholderText = "CODE HERE"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 16.000
+TextBox.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(229, 229, 229)
+Execute.BorderColor3 = Color3.fromRGB(198, 198, 198)
+Execute.Position = UDim2.new(0.0308641978, 0, 0.866473198, 0)
+Execute.Size = UDim2.new(0, 228, 0, 28)
+Execute.Font = Enum.Font.Code
+Execute.Text = "EXECUTE"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 16.000
+
+-- Scripts:
+
+local function ZIDTQUA_fake_script() -- Frame.UIDrag 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZIDTQUA_fake_script)()
+local function XNQFB_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local prefix = game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.MainFrame.Pages.Settings.Custom["AE1 Prefix"].SettingValue.TextBox.Text
+	local function command(text)
+		game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(prefix..""..unpack({[1]=text}))
+	end
+	local LocalPlayer = game.Players.LocalPlayer
+	local s = script.Parent
+	local function RemoveSpaces(String)
+		return String:gsub("%s+", "") or String
+	end
+	local Players = game.Players
+	local CMDBox = s.TextBox
+	local function FindPlayer(String)
+		String = RemoveSpaces(String)
+		for _, _Player in pairs(Players:GetPlayers()) do
+			if _Player.Name:lower():match('^'.. String:lower()) then
+				return _Player
+			end
+		end
+		return nil
+	end
+	s["Touch kill"].MouseButton1Down:Connect(function()
+		local xd = Players:FindFirstChild(CMDBox.Text)
+		xd.Character.Torso.Touched:connect(function(hit)
+			local Target = FindPlayer(hit.Parent.Name)
+			if Target and Target.Character then
+					local Player = Target
+					if LocalPlayer.Character.PrimaryPart ~= nil then
+						local Character = LocalPlayer.Character
+						local previous = LocalPlayer.Character.PrimaryPart.CFrame
+	
+						Character.Archivable = true
+						local Clone = Character:Clone()
+						LocalPlayer.Character = Clone
+						wait(0.5)
+						LocalPlayer.Character = Character
+						wait(0.2)
+	
+						if LocalPlayer.Character and Player.Character and Player.Character.PrimaryPart ~= nil then
+							if LocalPlayer.Character:FindFirstChildOfClass("Humanoid") then
+								LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):Destroy()
+							end
+	
+							local Humanoid = Instance.new("Humanoid")
+							Humanoid.Parent = LocalPlayer.Character
+	
+							local Tool = nil
+	
+							if LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+								Tool = LocalPlayer.Character:FindFirstChildOfClass("Tool")
+							elseif LocalPlayer.Backpack and LocalPlayer.Backpack:FindFirstChildOfClass("Tool") then
+								Tool = LocalPlayer.Backpack:FindFirstChildOfClass("Tool")
+							end
+							print(Tool)
+	
+							if Tool ~= nil then
+								Tool.Parent = LocalPlayer.Backpack
+	
+								Player.Character.HumanoidRootPart.Anchored = true
+	
+								local Arm = game.Players.LocalPlayer.Character['Right Arm'].CFrame * CFrame.new(0, -1, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0)
+								Tool.Grip = Arm:ToObjectSpace(Player.Character.PrimaryPart.CFrame):Inverse()
+	
+								Tool.Parent = LocalPlayer.Character
+								workspace.CurrentCamera.CameraSubject = Tool.Handle
+	
+								repeat
+									wait()
+								until not Tool or Tool and (Tool.Parent == workspace or Tool.Parent == Player.Character)
+								Player.Character.HumanoidRootPart.Anchored = false
+								wait(0.1)
+								Humanoid.Health = 0
+								LocalPlayer.Character = nil
+							end
+						end
+	
+						spawn(function()
+							LocalPlayer.CharacterAdded:Wait()
+							Player.Character.HumanoidRootPart.Anchored = false
+							if Player.Character.Humanoid.Health <= 15 then
+								repeat wait() until LocalPlayer.Character.PrimaryPart ~= nil
+								wait(0.4)
+								LocalPlayer.Character:SetPrimaryPartCFrame(previous)
+							end
+						end)
+					end
+			end
+		end)
+	end)
+	s.Control.MouseButton1Down:Connect(function()
+		command("control "..CMDBox.Text)
+	end)
+	local FindFirstChild, FindFirstChildOfClass, FindFirstChildWhichIsA, WaitForChild = game.FindFirstChild,game.FindFirstChildOfClass,game.FindFirstChildWhichIsA,game.WaitForChild
+	local Destroy, Clone = game.Destroy, game.Clone
+	local InstanceNew = Instance.new
+	local ReplaceCharacter = function()
+		local Char = LocalPlayer.Character
+		local Model = InstanceNew("Model");
+		LocalPlayer.Character = Model
+		LocalPlayer.Character = Char
+		Destroy(Model);
+		return Char
+	end
+	local GetCharacter =  function(Plr)
+		return Plr and Plr.Character or LocalPlayer.Character
+	end
+	local GetRoot = function(Plr, Char)
+		local LCharacter = GetCharacter();
+		local Character = Char or GetCharacter(Plr);
+		return Plr and Character and (FindFirstChild(Character, "HumanoidRootPart") or FindFirstChild(Character, "Torso") or FindFirstChild(Character, "UpperTorso")) or LCharacter and (FindFirstChild(LCharacter, "HumanoidRootPart") or FindFirstChild(LCharacter, "Torso") or FindFirstChild(LCharacter, "UpperTorso"));
+	end
+	
+	local GetHumanoid = function(Plr, Char)
+		local LCharacter = GetCharacter();
+		local Character = Char or GetCharacter(Plr);
+		return Plr and Character and FindFirstChildWhichIsA(Character, "Humanoid") or LCharacter and FindFirstChildWhichIsA(LCharacter, "Humanoid");
+	end
+	local SpoofedInstances = setmetatable({}, {
+		__mode = "v"
+	});
+	SpoofInstance = function(Instance_, Instance2)
+		if (not SpoofedInstances[Instance_]) then
+			SpoofedInstances[Instance_] = Instance2 and Instance2 or Clone(Instance_);
+		end
+	end
+	local ReplaceHumanoid = function(Hum, R)
+		local Humanoid = Hum or GetHumanoid();
+		local NewHumanoid = Clone(Humanoid);
+		if (R) then
+			NewHumanoid.Name = "1"
+		end
+		NewHumanoid.Parent = Humanoid.Parent
+		NewHumanoid.Name = Humanoid.Name
+		workspace.Camera.CameraSubject = NewHumanoid
+		Destroy(Humanoid);
+		SpoofInstance(NewHumanoid);
+		return NewHumanoid
+	end
+	local Connection = game.Loaded
+	local CWait = Connection.Wait
+	s.Refresh.MouseButton1Down:Connect(function()
+		ReplaceCharacter();
+		wait(Players.RespawnTime - 0.03);
+		local OldPos = GetRoot().CFrame
+		ReplaceHumanoid()
+		CWait(LocalPlayer.CharacterAdded)
+		WaitForChild(LocalPlayer.Character, "HumanoidRootPart").CFrame = OldPos
+	end)
+	s.R15.MouseButton1Down:Connect(function()
+		command("r15 "..CMDBox.Text)
+	end)
+	s.R6.MouseButton1Down:Connect(function()
+		command("r6 "..CMDBox.Text)
+	end)
+	s.Execute.MouseButton1Down:Connect(function()
+		command(""..CMDBox.Text)
+	end)
+end
+coroutine.wrap(XNQFB_fake_script)()
