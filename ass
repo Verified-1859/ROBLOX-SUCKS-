@@ -234,7 +234,7 @@ local function XNQFB_fake_script() -- Frame.LocalScript
 		xd.Character.Torso.Touched:connect(function(hit)
 			local Target = FindPlayer(hit.Parent.Name)
 			if Target and Target.Character then
-				command("explode"..Target.Name)
+				command("explode "..Target.Name)
 			end
 		end)
 	end)
