@@ -208,7 +208,7 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 	local s = script.Parent
 	skyname = "SSSKY "
 	c00lskiddecal = "158118263"
-	
+	pcall(function()
 	local player = game.Players.LocalPlayer
 	local char = player.Character
 	local tool
@@ -538,6 +538,7 @@ local function YYHDDCY_fake_script() -- ScrollingFrame.LocalScript
 			end)
 		end
 	end
+		end)
 	s["c00skdid decal spam (f3x games only)"].MouseButton1Down:Connect(function()
 		spam(c00lskiddecal)
 	end)
