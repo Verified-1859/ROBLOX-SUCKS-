@@ -2,7 +2,9 @@
 -- Version: 3.2
 
 -- Instances:
+pcall(function()
 game.Players.LocalPlayer.PlayerGui.ScreenGui:Destroy()
+end)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
